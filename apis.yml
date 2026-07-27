@@ -1,8 +1,28 @@
 aid: indian-energy-exchange
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/indian-energy-exchange.png
 name: Indian Energy Exchange
-description: 'Indian Energy Exchange is a company surfaced as a portfolio company of bessemer-venture-partners,
-  lightspeed-venture-partners and added to the API Evangelist network as a stub for enrichment. Sector:
-  fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Indian Energy Exchange (IEX) is India''s largest electricity trading
+  platform, operating a nationwide automated exchange for the physical delivery of
+  electricity, renewable energy, and certificates. IEX runs Day-Ahead, Real-Time,
+  Term-Ahead, Renewable Energy Certificate and Energy Saving Certificate market segments,
+  matching buy and sell bids across a member network of distribution utilities, industrial
+  and commercial consumers, and power generators. For members with sophisticated trading
+  needs IEX offers a members-only trading API (currently for the iDAM and RTM segments)
+  supporting order placement, trade-data retrieval and real-time monitoring for automated
+  and high-frequency trading; access is provisioned to registered members rather than
+  published as a public developer portal. Surfaced as a portfolio company and added
+  to the API Evangelist network for enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/indian-energy-exchange/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Fintech
+- Energy
+- Electricity
+- Power Trading
+- Exchange
+- Marketplace
+- Renewable Energy
+- Trading
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +52,15 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.iexindia.com/
+  url: https://www.iexindia.com/
+- type: TermsOfService
+  url: https://www.iexindia.com/terms-of-uses
+- type: PrivacyPolicy
+  url: https://www.iexindia.com/privacy-policy
+- type: DomainSecurity
+  url: security/indian-energy-exchange-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
